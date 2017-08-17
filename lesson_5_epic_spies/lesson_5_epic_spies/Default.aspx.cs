@@ -23,7 +23,8 @@ namespace lesson_5_epic_spies
 
         protected void assignButton_Click(object sender, EventArgs e)
         {
-            int COST_PER_DAY = 500;
+            double COST_PER_DAY = 500.00;
+            double BONUS = 1000.00;
             double totalCost = 0.00;
 
             /* Returns an error message to user if there are not at least 14 days between the end of 
@@ -41,7 +42,7 @@ namespace lesson_5_epic_spies
 
                 if (assignmentLength > 21)
                 {
-                    totalCost = (assignmentLength * COST_PER_DAY) + 1000;
+                    totalCost = (assignmentLength * COST_PER_DAY) + BONUS;
                 }
                 else
                 {
